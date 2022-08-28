@@ -1,38 +1,163 @@
-.App {
+.cont {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 35px;
+}
+
+body {
+  background-color: rgb(125, 162, 169, 0.8);
+}
+
+.block {
+  padding: 20px;
+  background-color: #d1cfcf;
   text-align: center;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.purse {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+p, h2 {
+  font-family: 'Heebo', sans-serif;
+  color: rgb(76, 75, 75);
+}
+
+.cartIcon {
+  width: 120px;
+  margin: 40px;
+}
+
+.categoryButtonSelected {
+  background-color: rgb(125, 162, 169, 0.8);
+  border-radius: 10px;
+}
+
+.categoryButton:hover {
+  background-color: rgb(147, 187, 57, 0.8);
+  border-radius: 10px;
+}
+
+.categoryButton {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+
+.icon {
+  width: 20px;
+  padding: 15px;
+}
+
+.cartBlock {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid rgb(125, 162, 169);
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.bag {
+  width: 200px;
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  background: linear-gradient(to right,#6ca8b3, #77982a);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: 'Heebo', sans-serif;
+}
+
+.btnAddToCart {
+  font-size: 20px;
+  margin-bottom: 30px;
+  background-color: rgb(125, 162, 169, 0.5);
+  border-radius: 5px;  
+}
+
+.quantity {
+  font-size: 25px;
+}
+
+.contBtn {
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: none;
+  background-color: rgb(125, 162, 169, 0.5);
+}
+
+.arrow {
+  width: 50px;
+}
+
+.contCart {
+  border: 1px solid rgb(125, 162, 169);
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.par {
+  margin: 18px;
+}
+
+@media all and (min-width: 501px) and (max-width: 1000px) {
+  .cont {
+    flex-wrap: nowrap;
   }
-  to {
-    transform: rotate(360deg);
+
+  .block {
+    border-right: 8px solid rgb(125, 162, 169, 0.8);
+    padding-right: 30px;
+  }
+}
+
+
+@media all and (max-width: 500px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+  
+  .arrow {
+    width: 30px;
+  }
+
+  .btn {
+    right: 40px;
+    bottom: 40px;
+    padding: 1px;
+  }
+
+  .block {
+    border-radius: 0;
+  }
+
+  .bag {
+    display: none;
   }
 }
